@@ -1,0 +1,24 @@
+{
+  "name": "showdown-katex-extension",
+  "version": "0.1.0",
+  "description": "KaTeX extension for ShowdownJS",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "tsc",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "author": "Kevin Nguyen",
+  "license": "MIT",
+  "dependencies": {
+    "katex": "^0.10.0"
+  },
+  "peerDependencies": {
+    "showdown": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/showdown": "^1.9.2",
+    "typescript": "^3.2.2"
+  }
+}

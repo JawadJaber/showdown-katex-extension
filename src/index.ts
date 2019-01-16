@@ -1,0 +1,1 @@
+export { default, mathExtension, KatexConfig } from './MathExtension';
