@@ -16,6 +16,7 @@ interface Delimiter {
 }
 
 const defaultConfig: KatexConfig = {
+  throwOnError: true,
   delimiters: [
     // Order is important here
     { left: "$$", right: "$$", displayMode: true },
@@ -80,7 +81,7 @@ export const mathExtension: (() => ShowdownExtension[]) = (config?: KatexConfig)
               math, 
               { 
                 displayMode: delim.displayMode,
-                throwOnError: false,
+                throwOnError: mergedConfig.throwOnError,
               }
             );
           });
