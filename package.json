@@ -1,20 +1,21 @@
 {
   "name": "showdown-katex-extension",
   "homepage": "https://github.com/knguyen0125/showdown-katex-extension",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "KaTeX extension for ShowdownJS",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "clean": "rm -rf ./dist",
+    "test": "jest",
     "build": "tsc",
-    "prepublishOnly": "npm run clean && npm run build",
-    "install": "npm run clean && npm run build",
-    "test": "jest"
+    "prepublishOnly": "npm test",
+    "prepare": "npm run clean && npm run build",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/knguyen0125/showdown-katex-extension"
+    "url": "git+https://github.com/knguyen0125/showdown-katex-extension"
   },
   "author": "Kevin Nguyen",
   "license": "MIT",
