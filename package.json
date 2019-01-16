@@ -19,7 +19,8 @@
   "author": "Kevin Nguyen",
   "license": "MIT",
   "dependencies": {
-    "katex": "^0.10.0"
+    "katex": "^0.10.0",
+    "typescript": "^3.2.2"
   },
   "peerDependencies": {
     "showdown": "^1.9.0"
@@ -29,7 +30,6 @@
     "@types/showdown": "^1.9.2",
     "jest": "^23.6.0",
     "showdown": "^1.9.0",
-    "ts-jest": "^23.10.5",
-    "typescript": "^3.2.2"
+    "ts-jest": "^23.10.5"
   }
 }
