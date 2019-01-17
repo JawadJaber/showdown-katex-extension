@@ -1,7 +1,7 @@
 {
   "name": "showdown-katex-extension",
   "homepage": "https://github.com/knguyen0125/showdown-katex-extension",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "KaTeX extension for ShowdownJS",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
